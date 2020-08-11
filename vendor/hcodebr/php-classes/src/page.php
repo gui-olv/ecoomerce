@@ -40,7 +40,9 @@ class Page{
 	{
 
 		foreach ($data as $key => $value) {
-			$this->tpl->assing($key);
+			
+			$this->tpl->assign($key,$value);
+
 		}
 
 	}
@@ -48,9 +50,13 @@ class Page{
 	public function setTpl($name,$data = array(), $retunrHTML = false)
 	{
 
+
 		$this->setData($data);
 
 		return $this->tpl->draw($name,$retunrHTML);
+
+		echo "Cheguei aqui";
+	exit;
 
 	}
 

@@ -36,7 +36,6 @@ class Model{
 
 	public function getValues()
 	{
-		echo "aqui";
 		return $this->values;
 	}
 
